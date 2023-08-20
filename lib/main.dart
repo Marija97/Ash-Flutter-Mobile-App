@@ -11,6 +11,7 @@ class AshApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Ash',
+      debugShowCheckedModeBanner: false,
       home: AshRouter.initialPage,
     );
   }
