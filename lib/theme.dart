@@ -18,7 +18,12 @@ abstract class AshTheme {
         dividerColor: AshColors.dividerDark,
         dialogBackgroundColor: AshColors.cardDark,
         textTheme: _buildTextTheme(ThemeData.dark()),
-        // navigationBarTheme: NavigationBarThemeData(),
+        navigationBarTheme: NavigationBarThemeData(
+          backgroundColor: AshColors.backgroundDark,
+          labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+          indicatorColor: AshColors.translucent,
+          height: 70,
+        ),
       );
 
   static TextTheme _buildTextTheme(ThemeData base) {

@@ -27,4 +27,6 @@ abstract class AshColors {
   static const primaryExperimental = Color(0xFF005B9F);
   static const primaryLight = Color(0xFF1E1E1E);
   static const primaryYellow = Color(0xFFFBC02D);
+
+  static const translucent = Color(0x00000000);
 }

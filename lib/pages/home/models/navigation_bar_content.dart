@@ -1,32 +1,32 @@
 import 'package:flutter/material.dart';
 
-class AshNavigationBarContent {
+class AshNavigationBarItem {
   final String label;
   final Widget icon;
   final Widget page;
 
-  AshNavigationBarContent({
+  AshNavigationBarItem({
     required this.label,
     required this.icon,
     required this.page,
   });
 
-  factory AshNavigationBarContent.feed({required Widget page}) =>
-      AshNavigationBarContent(
+  factory AshNavigationBarItem.feed({required Widget page}) =>
+      AshNavigationBarItem(
         label: 'Feed',
         icon: Icon(Icons.home),
         page: page,
       );
 
-  factory AshNavigationBarContent.profile({required Widget page}) =>
-      AshNavigationBarContent(
+  factory AshNavigationBarItem.profile({required Widget page}) =>
+      AshNavigationBarItem(
         label: 'Profile',
         icon: Icon(Icons.accessibility),
         page: page,
       );
 
-  factory AshNavigationBarContent.settings({required Widget page}) =>
-      AshNavigationBarContent(
+  factory AshNavigationBarItem.settings({required Widget page}) =>
+      AshNavigationBarItem(
         label: 'Settings',
         icon: Icon(Icons.settings),
         page: page,

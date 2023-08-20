@@ -9,9 +9,9 @@ import 'pages/home/settings/settings_page.dart';
 abstract class AshRouter {
   static Widget get initialPage => HomePage();
 
-  static final homeNavigationBarItems = <AshNavigationBarContent>[
-    AshNavigationBarContent.feed(page: FeedPage()),
-    AshNavigationBarContent.profile(page: ProfilePage()),
-    AshNavigationBarContent.settings(page: SettingsPage()),
+  static final homeNavigationBarItems = <AshNavigationBarItem>[
+    AshNavigationBarItem.feed(page: FeedPage()),
+    AshNavigationBarItem.profile(page: ProfilePage()),
+    AshNavigationBarItem.settings(page: SettingsPage()),
   ];
 }
