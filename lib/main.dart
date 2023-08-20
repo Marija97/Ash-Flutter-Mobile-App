@@ -13,7 +13,7 @@ class AshApp extends StatelessWidget {
     return MaterialApp(
       title: 'Ash',
       debugShowCheckedModeBanner: false,
-      theme: AshTheme.dark,
+      theme: AshTheme.dark().data,
       home: AshRouter.initialPage,
     );
   }

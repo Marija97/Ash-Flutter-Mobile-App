@@ -27,6 +27,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           border: Border(
+            // Todo: fetch AshTheme object and read navigationBarDividerColor
             top: BorderSide(color: AshColors.dividerDark, width: .5),
           ),
         ),

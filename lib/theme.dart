@@ -3,28 +3,12 @@ import 'package:flutter/material.dart';
 import 'common/colors.dart';
 import 'common/dimensions.dart';
 
-abstract class AshTheme {
-  /// Dark style
-  static ThemeData get dark => ThemeData.dark().copyWith(
-        brightness: Brightness.dark,
-        colorScheme: const ColorScheme.dark().copyWith(
-          primary: AshColors.accentDark,
-          secondary: AshColors.accentDark,
-        ),
-        primaryColor: AshColors.primaryDark,
-        canvasColor: AshColors.canvasDark,
-        scaffoldBackgroundColor: AshColors.backgroundDark,
-        cardColor: AshColors.cardDark,
-        dividerColor: AshColors.dividerDark,
-        dialogBackgroundColor: AshColors.cardDark,
-        textTheme: _buildTextTheme(ThemeData.dark()),
-        navigationBarTheme: NavigationBarThemeData(
-          backgroundColor: AshColors.backgroundDark,
-          labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
-          indicatorColor: AshColors.translucent,
-          height: 70,
-        ),
-      );
+class AshTheme {
+  factory AshTheme.dark() => _AshDarkTheme();
+
+  ThemeData get data => ThemeData();
+
+  Color get navigationBarDividerColor => AshColors.translucent;
 
   static TextTheme _buildTextTheme(ThemeData base) {
     final textTheme = base.textTheme;
@@ -50,4 +34,31 @@ abstract class AshTheme {
       ),
     );
   }
+}
+
+class _AshDarkTheme implements AshTheme {
+  @override
+  ThemeData get data => ThemeData.dark().copyWith(
+        brightness: Brightness.dark,
+        colorScheme: const ColorScheme.dark().copyWith(
+          primary: AshColors.accentDark,
+          secondary: AshColors.accentDark,
+        ),
+        primaryColor: AshColors.primaryDark,
+        canvasColor: AshColors.canvasDark,
+        scaffoldBackgroundColor: AshColors.backgroundDark,
+        cardColor: AshColors.cardDark,
+        dividerColor: AshColors.dividerDark,
+        dialogBackgroundColor: AshColors.cardDark,
+        textTheme: AshTheme._buildTextTheme(ThemeData.dark()),
+        navigationBarTheme: NavigationBarThemeData(
+          backgroundColor: AshColors.backgroundDark,
+          labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+          indicatorColor: AshColors.translucent,
+          height: 70,
+        ),
+      );
+
+  @override
+  Color get navigationBarDividerColor => AshColors.dividerDark;
 }
