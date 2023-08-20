@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../constants/colors.dart';
+import '../../common/colors.dart';
 import '../../router.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   int currentIndex = 0;
 
   final destinations = AshRouter.homeNavigationBarItems
-      .map((item) => item.asDestination)
+      .map((navigationBarItem) => navigationBarItem.asDestination)
       .toList();
 
   void _onDestinationSelected(int index) => setState(() {
@@ -24,11 +24,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AshColors.background,
-      bottomNavigationBar: NavigationBar(
-        destinations: destinations,
-        selectedIndex: currentIndex,
-        onDestinationSelected: _onDestinationSelected,
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          border: Border(
+            // Todo: fetch AshTheme object and read navigationBarDividerColor
+            top: BorderSide(color: AshColors.dividerDark, width: .5),
+          ),
+        ),
+        child: NavigationBar(
+          destinations: destinations,
+          selectedIndex: currentIndex,
+          onDestinationSelected: _onDestinationSelected,
+        ),
       ),
       body: AshRouter.homeNavigationBarItems[currentIndex].page,
     );

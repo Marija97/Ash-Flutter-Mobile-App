@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:ash/theme.dart';
 import 'router.dart';
 
 void main() => runApp(const AshApp());
@@ -12,6 +13,7 @@ class AshApp extends StatelessWidget {
     return MaterialApp(
       title: 'Ash',
       debugShowCheckedModeBanner: false,
+      theme: AshTheme.dark().data,
       home: AshRouter.initialPage,
     );
   }
