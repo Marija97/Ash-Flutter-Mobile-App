@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../constants/colors.dart';
+import '../common/dimensions.dart';
 
 class AshText extends StatelessWidget {
   final String text;
   final double size;
-  final Color color;
+  final Color? color;
 
-  const AshText(
-    this.text, {
-    required this.size,
-    this.color = AshColors.standardText,
-  });
+  const AshText(this.text, {required this.size, this.color});
 
-  const AshText.small(String text) : this(text, size: 12);
+  const AshText.small(String text) : this(text, size: AshFontSizes.subtitle2);
 
-  const AshText.medium(String text) : this(text, size: 16);
+  const AshText.medium(String text) : this(text, size: AshFontSizes.subtitle1);
 
-  const AshText.large(String text) : this(text, size: 22);
+  const AshText.large(String text) : this(text, size: AshFontSizes.subheading);
 
   @override
   Widget build(BuildContext context) {
