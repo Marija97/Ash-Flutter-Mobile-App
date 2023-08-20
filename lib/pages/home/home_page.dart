@@ -22,13 +22,16 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: NavigationBar(
-        destinations: destinations,
-        selectedIndex: currentIndex,
-        onDestinationSelected: _onDestinationSelected,
+    return NavigationBarTheme(
+      data: NavigationBarThemeData(),
+      child: Scaffold(
+        bottomNavigationBar: NavigationBar(
+          destinations: destinations,
+          selectedIndex: currentIndex,
+          onDestinationSelected: _onDestinationSelected,
+        ),
+        body: AshRouter.homeNavigationBarItems[currentIndex].page,
       ),
-      body: AshRouter.homeNavigationBarItems[currentIndex].page,
     );
   }
 }
