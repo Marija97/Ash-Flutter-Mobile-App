@@ -1,6 +1,6 @@
 # Ash
 
-A Full-stack mobile app in progress.
+A Full-stack mobile app project in progress.
 
 ## Objective:
 
