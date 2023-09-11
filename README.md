@@ -1,6 +1,6 @@
 # Ash
 
-A new Flutter application.
+A Full-stack mobile app in progress.
 
 ## Objective:
 
