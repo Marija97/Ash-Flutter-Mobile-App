@@ -9,7 +9,7 @@ Additionally it will serve as a platform for showcasing my evolving development 
 
 ## Technology Stack:
 
-For the mobile app development aspect, I have chosen to use Flutter, a versatile framework known for its efficiency in creating cross-platform mobile applications.
+For the mobile app development aspect, I have chosen to use Flutter, a versatile framework known for its efficiency in creating cross-platform mobile applications. I will implement BloC (Business Logic Component) for effective state management, ensuring a robust and scalable architecture.
 On the backend, I'm planning to employ Node.js, a popular and scalable runtime environment for server-side applications.
 
 ## Functionality:
