@@ -12,7 +12,7 @@ class ProfilePage extends StatelessWidget {
       child: Column(children: [
         const Spacer(),
         AshText.large('Profile :)'),
-        const SizedBox(height: 20),
+        const SizedBox(height: 30),
         AshButton(title: 'Upload photo', onTap: _uploadAPhoto),
         const Spacer(),
       ]),
