@@ -14,11 +14,40 @@ dependencies:
   bloc: ^8.1.2
   flutter_bloc: ^8.1.3
   equatable: ^2.0.5
+  go_router: ^13.0.1
+  lottie: ^3.0.0
+  flutter_native_splash: ^2.0.2
+  flutter_launcher_icons: ^0.13.1
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logos/ash_logo_launcher_icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+
+flutter_native_splash:
+  # This package generates native code to customize Flutter's default
+  # white native splash screen with background color and splash image.
+  color: "#e3dacf"
+  image: assets/images/logos/sunflower_logo_splash.png
+  color_dark: "#042a49"
+
+  android_12:
+    # The image parameter sets the splash screen icon image
+    image: assets/images/logos/sunflower_logo_splash.png
+
+    # Splash screen background color.
+    color: "#e3dacf"
+
+    # App icon background color.
+    icon_background_color: "#e3dacf"
 
 
 flutter:
@@ -29,5 +58,7 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application
-  assets:
-    - assets/icons/
+  # assets:
+  #   - assets/animations/
+
+
