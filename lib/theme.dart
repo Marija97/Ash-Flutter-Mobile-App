@@ -5,6 +5,7 @@ import 'common/dimensions.dart';
 
 class AshTheme {
   factory AshTheme.dark() => _AshDarkTheme();
+  factory AshTheme.light() => _AshLightTheme();
 
   ThemeData get data => ThemeData();
 
@@ -61,4 +62,33 @@ class _AshDarkTheme implements AshTheme {
 
   @override
   Color get navigationBarDividerColor => AshColors.dividerDark;
+}
+
+class _AshLightTheme implements AshTheme {
+  @override
+  ThemeData get data => ThemeData.light().copyWith(
+        brightness: Brightness.light,
+        colorScheme: const ColorScheme.light().copyWith(
+          primary: AshColors.ashBeige,
+          secondary: AshColors.accentLight,
+        ),
+        primaryColor: AshColors.canvasDark,
+        canvasColor: AshColors.canvasDark,
+        scaffoldBackgroundColor: AshColors.ashBeige,
+        cardColor: AshColors.cardDark,
+        dividerColor: AshColors.attachmentBorder,
+        dialogBackgroundColor: AshColors.cardDark,
+        textTheme: AshTheme._buildTextTheme(ThemeData.light()),
+        navigationBarTheme: NavigationBarThemeData(
+          backgroundColor: AshColors.photoAlbumBackground,
+          labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
+          indicatorColor: AshColors.translucent,
+          shadowColor: AshColors.translucent,
+          surfaceTintColor: AshColors.translucent,
+          height: 50,
+        ),
+      );
+
+  @override
+  Color get navigationBarDividerColor => AshColors.attachmentBorder;
 }
