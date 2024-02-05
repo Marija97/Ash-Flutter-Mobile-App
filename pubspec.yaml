@@ -18,11 +18,16 @@ dependencies:
   lottie: ^3.0.0
   flutter_native_splash: ^2.0.2
   flutter_launcher_icons: ^0.13.1
+  flutter_svg: ^2.0.9
+  google_fonts: ^6.1.0
 
 
 dev_dependencies:
+  build_runner: null
+  flutter_gen_runner: null
   flutter_test:
     sdk: flutter
+
 
 
 flutter_launcher_icons:
@@ -49,6 +54,11 @@ flutter_native_splash:
     # App icon background color.
     icon_background_color: "#e3dacf"
 
+flutter_gen:
+
+  integrations:
+    flutter_svg: true
+
 
 flutter:
 
@@ -58,7 +68,6 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application
-  # assets:
-  #   - assets/animations/
-
+  assets:
+    - assets/images/illustrations/
 
