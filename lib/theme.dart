@@ -74,7 +74,7 @@ class _AshLightTheme implements AshTheme {
         ),
         primaryColor: AshColors.canvasDark,
         canvasColor: AshColors.canvasDark,
-        scaffoldBackgroundColor: AshColors.ashBeige,
+        scaffoldBackgroundColor: AshColors.photoAlbumBackground,
         cardColor: AshColors.cardDark,
         dividerColor: AshColors.attachmentBorder,
         dialogBackgroundColor: AshColors.cardDark,

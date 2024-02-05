@@ -1,19 +1,23 @@
+import 'package:ash/common/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-import '../../../common/colors.dart';
 import '../../../gen/assets.gen.dart';
-import '../../../widgets/text.dart';
 
 class FeedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: AshColors.photoAlbumBackground,
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          AshText.large('Feed :)'),
+          const Spacer(),
+          Text(
+            AshConstants.lifeQuote,
+            style: GoogleFonts.dancingScript().copyWith(fontSize: 35),
+          ),
           Assets.images.illustrations.photoAlbum.image(),
+          const Spacer(),
         ],
       ),
     );
