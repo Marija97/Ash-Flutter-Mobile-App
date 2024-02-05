@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AshNavigationBarItem {
   final String label;
-  final Widget icon;
+  final IconData icon;
   final Widget page;
 
   AshNavigationBarItem({
@@ -11,28 +11,32 @@ class AshNavigationBarItem {
     required this.page,
   });
 
-  factory AshNavigationBarItem.feed({required Widget page}) =>
+  factory AshNavigationBarItem.feed({required Widget page}) => //
       AshNavigationBarItem(
         label: 'Feed',
-        icon: Icon(Icons.home),
+        icon: Icons.menu_book_rounded,
         page: page,
       );
 
-  factory AshNavigationBarItem.profile({required Widget page}) =>
+  factory AshNavigationBarItem.profile({required Widget page}) => //
       AshNavigationBarItem(
         label: 'Profile',
-        icon: Icon(Icons.accessibility),
+        icon: Icons.account_box_outlined,
         page: page,
       );
 
-  factory AshNavigationBarItem.settings({required Widget page}) =>
+  factory AshNavigationBarItem.settings({required Widget page}) => //
       AshNavigationBarItem(
         label: 'Settings',
-        icon: Icon(Icons.settings),
+        icon: Icons.settings,
         page: page,
       );
 
   NavigationDestination get asDestination {
-    return NavigationDestination(icon: icon, label: label);
+    return NavigationDestination(
+      icon: Icon(icon, size: 26, color: Colors.blueGrey.shade800.withOpacity(.55)),
+      selectedIcon: Icon(icon, size: 26, color: Colors.blueGrey.shade800),
+      label: label,
+    );
   }
 }
