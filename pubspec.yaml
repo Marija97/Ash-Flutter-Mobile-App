@@ -28,7 +28,7 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/logos/ash_logo_launcher_icon.png"
+  image_path: "assets/images/logos/sunflower_launcher.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
 
 
@@ -36,12 +36,12 @@ flutter_native_splash:
   # This package generates native code to customize Flutter's default
   # white native splash screen with background color and splash image.
   color: "#e3dacf"
-  image: assets/images/logos/sunflower_logo_splash.png
+  image: assets/images/logos/sunflower_splash.png
   color_dark: "#042a49"
 
   android_12:
     # The image parameter sets the splash screen icon image
-    image: assets/images/logos/sunflower_logo_splash.png
+    image: assets/images/logos/sunflower_splash.png
 
     # Splash screen background color.
     color: "#e3dacf"
