@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:ash/theme/theme.dart';
-import 'router.dart';
+import 'routing/router.dart';
 
 void main() => runApp(const AshApp());
 
@@ -10,11 +10,13 @@ class AshApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Ash',
       debugShowCheckedModeBanner: false,
+      routerDelegate: AshRouter.instance.routerDelegate,
+      routeInformationParser: AshRouter.instance.routeInformationParser,
+      routeInformationProvider: AshRouter.instance.routeInformationProvider,
       theme: AshTheme.dark().data,
-      home: AshRouter.initialPage,
     );
   }
 }
