@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:ash/theme.dart';
+import 'package:ash/theme/theme.dart';
 import 'router.dart';
 
 void main() => runApp(const AshApp());

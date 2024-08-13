@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../common/colors.dart';
+import '../../theme/colors.dart';
 import '../../router.dart';
 
 class HomePage extends StatefulWidget {
