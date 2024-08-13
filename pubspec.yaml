@@ -19,6 +19,8 @@ dependencies:
   flutter_native_splash: ^2.0.2
   flutter_launcher_icons: ^0.13.1
   flutter_svg: ^2.0.9
+  flutter_localizations:
+    sdk: flutter
   google_fonts: ^6.1.0
 
 
@@ -61,6 +63,8 @@ flutter_gen:
 
 
 flutter:
+  # This flag has to be true in order for gen-l10n to generate localizations
+  generate: true
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

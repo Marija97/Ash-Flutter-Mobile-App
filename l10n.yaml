@@ -1,0 +1,15 @@
+# https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization?gclid=CjwKCAjw7oeqBhBwEiwALyHLMzYMgW6VuY35JTbhGr5H-aJCxYNcCce_uwHrDITOalgLrIu55rLzDhoCAmYQAvD_BwE&gclsrc=aw.ds#setting-up:~:text=This%20file%20configures%20the%20localization%20tool.%20In%20this%20example%2C%20you%E2%80%99ve%20done%20the%20following%3A
+# This file configures the localization tool. In this example, you’ve done the following:
+# Put the App Resource Bundle (.arb) input files in ${FLUTTER_PROJECT}/lib/l10n. The .arb provide localization resources for your app.
+# Set the English template as app_en.arb.
+# Told Flutter to generate localizations in the app_localizations.dart file.
+
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+untranslated-messages-file: desiredFileName.txt
+
+# Preferred (fallback) locale, in case device locale is not supported.
+# By default, gen-l10n sorts the supported locales in alphabetical order,
+# this setting enables English to be the first supported locale.
+preferred-supported-locales: en
