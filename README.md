@@ -1,16 +1,24 @@
-# ash
+# Ash
+ 
+A Full-Stack mobile  app project in progress.
 
-A new Flutter application.
+## Objective:
 
-## Getting Started
+The Ash project initially aims to cater to my individual requirements, with a particular focus on organizing media feature.
+Additionally it will serve as a platform for showcasing my evolving development skills and expanding my knowledge in the field.
 
-This project is a starting point for a Flutter application.
+## Technology Stack:
 
-A few resources to get you started if this is your first Flutter project:
+For the mobile app development aspect, I have chosen to use Flutter, a versatile framework known for its efficiency in creating cross-platform mobile applications. I will implement BloC (Business Logic Component) for effective state management, ensuring a robust and scalable architecture.
+On the backend, I'm planning to employ Node.js, a popular and scalable runtime environment for server-side applications.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Functionality:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ash is being designed as a comprehensive platform with the core purpose of capturing and preserving cherished memories.
+Its features encompass the ability to save, organize, and share photos and videos within user-created albums.
+
+## Future Potential:
+
+There is a long-term vision for Ash to become a full-fledged social media platform, where users can not only store their memories but also connect with others, fostering a sense of community and engagement.
+
+In summary, the Ash project represents an exciting journey of personal growth and skill development in the world of mobile and backend development, as well as a platform that will address needs for collecting and saving memories for potentially significant number of users around the world.

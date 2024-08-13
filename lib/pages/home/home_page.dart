@@ -28,13 +28,14 @@ class _HomePageState extends State<HomePage> {
         decoration: BoxDecoration(
           border: Border(
             // Todo: fetch AshTheme object and read navigationBarDividerColor
-            top: BorderSide(color: AshColors.dividerDark, width: .5),
+            top: BorderSide(color: Colors.white, width: .5),
           ),
         ),
         child: NavigationBar(
           destinations: destinations,
           selectedIndex: currentIndex,
           onDestinationSelected: _onDestinationSelected,
+          animationDuration: Duration.zero,
         ),
       ),
       body: AshRouter.homeNavigationBarItems[currentIndex].page,

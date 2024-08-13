@@ -3,6 +3,8 @@ import 'package:flutter/material.dart' show Color;
 abstract class AshColors {
   static const backgroundDark = Color(0xFF000000);
   static const standardText = Color(0xFFAAAAAA);
+  static const ashBeige = Color(0xFFE3DACF);
+  static const photoAlbumBackground = Color(0xFFECE2D5);
 
   static const accentDark = Color(0xFF6A4F4B);
   static const accentExperimental = Color(0xFF0288D1);

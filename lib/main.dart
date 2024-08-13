@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:ash/theme/theme.dart';
 import 'routing/router.dart';
 
-void main() => runApp(const AshApp());
+Future<void> main() async {
+  await Future.delayed(const Duration(seconds: 1));
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const AshApp());
+}
 
 class AshApp extends StatelessWidget {
   const AshApp({Key? key}) : super(key: key);
