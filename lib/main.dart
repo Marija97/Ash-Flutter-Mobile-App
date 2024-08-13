@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:ash/theme.dart';
-import 'router.dart';
+import 'package:ash/theme/theme.dart';
+import 'routing/router.dart';
 
 Future<void> main() async {
-  await Future.delayed(const Duration(seconds: 2));
+  await Future.delayed(const Duration(seconds: 1));
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const AshApp());
 }
@@ -14,11 +14,13 @@ class AshApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Ash',
       debugShowCheckedModeBanner: false,
-      theme: AshTheme.light().data,
-      home: AshRouter.initialPage,
+      routerDelegate: AshRouter.instance.routerDelegate,
+      routeInformationParser: AshRouter.instance.routeInformationParser,
+      routeInformationProvider: AshRouter.instance.routeInformationProvider,
+      theme: AshTheme.dark().data,
     );
   }
 }

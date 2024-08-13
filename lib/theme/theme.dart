@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'common/colors.dart';
-import 'common/dimensions.dart';
+import 'colors.dart';
+import '../common/dimensions.dart';
 
 class AshTheme {
   factory AshTheme.dark() => _AshDarkTheme();
